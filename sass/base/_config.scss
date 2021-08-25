@@ -1,0 +1,48 @@
+*, *::before, *::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font: inherit;
+}
+
+html {
+   font-size: 62.5%;
+   scroll-behavior: smooth;
+   scroll-padding-block-start: 2rem;
+
+   @include respond(tab-landscape) {
+      font-size: 56.25%;   // 9px
+   }
+
+   @include respond(tab-portrait) { // Also applies to phone
+      font-size: 50%;
+   }
+
+   @include respond(lg-desktop) {
+      font-size: 75%;
+   }
+}
+
+body {
+   min-height: 100vh;
+   font-family: 'Rubik', sans-serif;
+   color: #777;
+   display: grid;
+   grid-template-rows:
+      [nav-start] 14vh [nav-end 
+      header-start] auto [header-end 
+      main-start] 1fr [main-end 
+      footer-start] auto [footer-end];
+}
+
+main {
+   grid-row: main-start / main-end;
+}
+
+::selection {
+   background: $color-primary-lighter;
+}
+a {
+   color: inherit;
+   text-decoration: none;
+}

@@ -1,0 +1,35 @@
+.mobile-nav {
+   position: fixed;
+   top: -10vh;
+   left: 0;
+   inset-inline: 0;
+   font-size: 1.5rem;
+   padding: 2em 4em;
+   background: rgba($color-primary, .97);
+   color: $color-white !important;
+   text-transform: uppercase;
+   box-shadow: 0 3px 20vh 2px rgba(#000, .7);
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 1.5rem;
+   column-gap: 3em;
+   opacity: 0;
+   visibility: hidden;
+   z-index: 9;
+   transition: all 1s;
+
+   &__link {
+      padding: 1rem 1.15rem;
+
+      &:hover {
+         background: $color-primary-light;
+      }
+   }
+
+   &--open {
+      opacity: 1;
+      visibility: visible;
+      top: $navbar-height;
+   }
+}

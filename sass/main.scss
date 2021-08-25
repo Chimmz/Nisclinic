@@ -1,0 +1,38 @@
+@import './abstracts/variables';
+@import './abstracts/mixins';
+
+@import './base/config';
+@import './base/animations';
+@import './base/typography';
+@import './base/utils';
+
+@import './components/button';
+@import './components/feature';
+@import './components/service';
+@import './components/review';
+@import './components/breadcrumb';
+
+@import './composition/imgslider.scss';
+@import './composition/features';
+@import './composition/allreviews';
+
+@import './layout/navigation';
+@import './layout/header';
+@import './layout/footer';
+@import './layout/navbar';
+@import './layout/mobile-nav';
+
+@import './pages/contact-us';
+
+@import './pages/home';
+@import './pages/hair-transplant';
+@import './pages/facial-rejuvenation';
+@import './pages/body-aesthetics';
+@import './pages/laser-app';
+@import './pages/slim-cellulite';
+@import './pages/facial-aesthetics';
+@import './pages/breast-aesthetics';
+@import './pages/powerplate';
+@import './pages/mesotherapy';
+@import './pages/pages-general-layout.scss'
+

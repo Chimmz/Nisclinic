@@ -1,0 +1,33 @@
+.review {
+   // border: 1px solid red;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   position: relative;
+
+   &__img {
+      width: 10rem;
+      height: 10rem;
+      border-radius: 50%;
+   }
+
+   &__testimony {
+      position: relative;
+
+      &::before {
+         content: '“';
+         position: absolute;
+         left: -1rem;
+         top: -1rem;
+         font-size: 10rem;
+         color: $color-primary;
+      }
+   }
+
+   &__author {
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      color: $color-gray-darker;
+      font-weight: 700;
+   }
+}

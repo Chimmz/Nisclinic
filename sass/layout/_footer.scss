@@ -1,0 +1,41 @@
+.footer {
+   grid-row: footer-start / footer-end;
+   font-size: 1.25rem;
+   // background: rgb(36, 20, 6); // Nice dark bgd
+   border-top: 1px solid rgb(236, 236, 236);
+   background: $color-white;
+   color: $color-gray-dark;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+   padding: 10vh 5vw;
+
+   @include respond(phone) {
+      gap: 5rem;
+      flex-direction: column;
+      justify-content: center;
+   }
+
+   &__socicons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem;
+      color: $color-gray-dark;
+
+      @include respond(phone) {
+         order: -1;
+      }
+
+      & .iconify {
+         font-size: 2.5rem;
+         cursor: pointer;
+         transition: .2s;
+
+         &:hover {
+            color: #000;
+         }
+      }
+   }
+}

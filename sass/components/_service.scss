@@ -1,0 +1,25 @@
+.service {
+   display: flex;
+   flex-direction: column;
+   gap: 1.3rem;
+
+   &__picture {
+
+   }
+
+   &__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+   }
+
+   &__btn-readmore {
+      background: none;
+      align-self: start;
+      transition: transform .7s;
+
+      &:hover span.rightarr {
+         transform: translateX(3px);
+      }
+   }
+}

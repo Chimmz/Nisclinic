@@ -1,0 +1,56 @@
+.heading-1 {
+   font-family: 'Poppins', sans-serif;
+   font-size: 4vw;
+
+   &--main {
+      
+   }
+}
+
+.heading-2 {
+   min-width: max-content;
+   font-size: 3rem;
+   font-family: 'Yeseva One', sans-serif;
+   color: #000;
+   text-transform: uppercase;
+   position: relative;
+
+   &::after {
+      content: '';
+      position: absolute;
+      bottom: -1rem;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 5rem;
+      max-width: 30%;
+      height: 4px;
+      background: $color-primary-light
+   }
+}
+
+.heading-3 {
+   font-size: 2.5rem;
+   text-transform: uppercase;
+   font-weight: bold;
+   color: $color-gray-darkest;
+}
+
+.heading-4 {
+   font-size: 1.85rem;
+   font-weight: 700;
+   text-transform: uppercase;
+   // color: $color-gray-darke;
+}
+
+.heading-6 {
+   font-size: 1.9rem;
+   font-weight: bold;
+}
+
+.parag {
+   max-width: 70ch;
+   font-size: $default-f-size;
+   color: $color-gray-darker;
+   line-height: 3.2rem;
+   font-family: 'Rubik', sans-serif;
+}
