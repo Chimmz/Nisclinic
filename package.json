@@ -1,15 +1,20 @@
 {
-  "name": "yirtici",
+  "name": "nisclinic",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss mycss/style.css -w"
+    "compile:sass": "node-sass sass/main.scss mycss/style.css -w",
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "node-sass": "^6.0.1"
+  },
+  "devDependencies": {
+    "@parcel/transformer-image": "^2.0.0-rc.0",
+    "parcel": "^2.0.0-rc.0"
   }
 }
